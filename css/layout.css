@@ -1,0 +1,346 @@
+  * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+  }
+
+  body {
+      font-family: Georgia, serif;
+      margin: 0 auto;
+      color: #222;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      background-color: #FAFBFC;
+  }
+
+  header {
+      padding: 4px 0;
+      display: grid;
+      grid-template-columns: 33% 34% 33%;
+      grid-template-rows: 1;
+      background-color: #E9EDF2;
+      background: rgba(233, 237, 242, 0.9);
+      backdrop-filter: blur(10px);
+      width: 100%;
+      position: sticky;
+      z-index: 1000;
+      top: 0;
+  }
+
+  header h1 {
+      font-size: 20px;
+      margin: 0;
+      color: #0A2D6F;
+      margin-top: 35px;
+      grid-column: 2;
+      text-align: center;
+  }
+
+  nav {
+      background-color: #E9EDF2;
+      height: 40px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+  }
+
+  nav ul {
+      list-style: none;
+      margin-right: 50px;
+      padding: 0;
+      display: flex;
+      gap: 50px;
+  }
+
+  nav a {
+      text-decoration: none;
+      color: #0A2D6F;
+      font-family: sans-serif;
+      font-size: 15px;
+  }
+
+  nav a:hover {
+      text-decoration: underline;
+  }
+
+  main>section {
+      padding: 48px 0;
+      border-bottom: 1px solid #ddd;
+  }
+
+  main>section:last-child {
+      border-bottom: none;
+  }
+
+  h2 {
+      font-size: 30px;
+      margin-bottom: 8px;
+  }
+
+  h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+  }
+
+  #agende p.subtitulo {
+      font-size: 20px;
+      color: #555;
+      max-width: 580px;
+  }
+
+  #agende a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 8px 20px;
+      background: #222;
+      color: #fff;
+      text-decoration: none;
+      font-family: sans-serif;
+      font-size: 16px;
+  }
+
+  #agende a:hover {
+      background: #444;
+  }
+
+  #cursos ul {
+      list-style: none;
+      padding: 0;
+      margin: 24px 0 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+  }
+
+  #cursos li {
+      border: 1px solid #ccc;
+      padding: 20px;
+  }
+
+  #cursos li small {
+      display: inline-block;
+      margin-top: 8px;
+      font-family: sans-serif;
+      font-size: 14px;
+      color: #666;
+      border: 1px solid #aaa;
+      padding: 4px 8px;
+  }
+
+  label {
+      display: flex;
+      flex-direction: column;
+      font-family: sans-serif;
+      font-size: 16px;
+  }
+
+  input,
+  select,
+  textarea {
+      padding: 10px 20px;
+      border: 1px solid #aaa;
+      font-size: 16px;
+      font-family: Georgia, serif;
+      background: #fafafa;
+  }
+
+  input:focus,
+  select:focus,
+  textarea:focus {
+      outline: 2px solid #222;
+      background: #fff;
+  }
+
+  textarea {
+      min-height: 110px;
+      resize: vertical;
+  }
+
+  form button {
+      align-self: flex-end;
+      padding: 10px 20px;
+      background: #222;
+      color: #fff;
+      border: none;
+      font-size: 16px;
+      font-family: sans-serif;
+      cursor: pointer;
+  }
+
+  form button:hover {
+      background: #444;
+  }
+
+  footer {
+      padding: 20px 0;
+      gap: 20px;
+      background-color: #E9EDF2;
+      width: 100%;
+      display: block;
+      text-align: center;
+  }
+
+  footer address {
+      font-style: normal;
+      font-family: sans-serif;
+      font-size: 14px;
+      line-height: 2;
+  }
+
+  footer address a {
+      color: #222;
+      text-decoration: none;
+  }
+
+  footer address a:hover {
+      text-decoration: underline;
+  }
+
+  footer small {
+      width: 100%;
+      display: block;
+      font-family: sans-serif;
+      font-size: 14px;
+      color: #888;
+  }
+
+  header img {
+      height: 100px;
+      width: auto;
+      margin-left: 50px;
+      grid-column: 1;
+  }
+
+  main {
+      padding: 20px;
+      background-color: #EEF2F6;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      border-radius: 10px;
+      max-width: 860px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+  }
+
+  aside {
+      width: 280px;
+      min-width: 280px;
+
+      background-color: #EEF2F6;
+      border-radius: 16px;
+
+      padding: 24px;
+
+      margin-top: 25%;
+      height: fit-content;
+
+  }
+
+  .sobre {
+      font-size: 16px;
+      line-height: 1.5;
+      text-align: start;
+      padding-bottom: 10px;
+      align-self: flex-start;
+  }
+
+  .aside_lateral {
+      display: flex;
+      align-items: flex-start;
+      width: 100%;
+      justify-content: flex-start;
+      gap: 50px;
+
+      margin: 0 auto;
+      padding: 40px;
+  }
+
+  aside ul {
+      list-style: none;
+  }
+
+  aside ul li {
+      padding-bottom: 10px;
+  }
+
+  @media(max-width:768px) {
+
+      header,
+      nav,
+      aside,
+      main,
+      section,
+      footer {
+          width: 100%;
+      }
+
+      aside,
+      main {
+          float: none;
+      }
+
+      .content {
+          display: flex;
+          flex-direction: column;
+      }
+
+  }
+
+  form label {
+      display: inline-block;
+      padding: 20px;
+      width: 100%;
+      padding-right: 0;
+  }
+
+  form input,
+  select,
+  textarea {
+      border-radius: 20px;
+      width: 60%;
+      margin-right: 20px;
+
+  }
+
+  form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin-top: 16px;
+  }
+
+  #contato h2 {
+      text-align: center;
+  }
+
+  #contato {
+      width: 100%;
+  }
+
+  .formulario {
+      width: 70%;
+  }
+
+  .confirmacao {
+      margin-top: 20px;
+  }
+
+  #btnConfirmar {
+      display: none;
+      font-size: 20px;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #222;
+      color: #fff;
+      border: none;
+      font-size: 16px;
+      font-family: sans-serif;
+      cursor: pointer;
+  }
+
+#btnConfirmar:hover {
+      background: #444;
+  }
